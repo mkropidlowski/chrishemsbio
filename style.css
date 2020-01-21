@@ -406,6 +406,7 @@ html,body{
         background-color: #CA3433;
         border-bottom-left-radius: 100%;
         display: none;
+        z-index: 1;
     }
 
   
@@ -439,10 +440,12 @@ html,body{
         font-size:13px;
         text-align: justify;
         
+        
     }
     
     .quotes > h3{
         text-align: right;
+        
     }
 
     

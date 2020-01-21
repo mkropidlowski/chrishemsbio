@@ -11,3 +11,12 @@ hamburger.addEventListener('click', e =>{
         
     }
 });
+
+
+window.onscroll = () => { hideWhenScroll()};
+
+function hideWhenScroll(){
+    if(document.body.scrollTop > 1 || document.documentElement.scrollTop > 1){
+        menu.style.display = 'none';
+    }
+}
