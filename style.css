@@ -1,0 +1,540 @@
+html,body{
+    width:100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+
+@media only screen and (min-width:1260px)
+{
+
+.page{
+    width:100%;
+}
+.photo{
+    background-image: url("img/bg.jpg");
+    height: 750px;
+    width: 100%;
+    color:white;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.site-top, .menu{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+    
+}
+
+
+.site-top > h1{
+    font-size:35px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hamburger{
+    display: none;
+}
+
+
+.menu-list a li{
+    display: inline-block;
+    font-size:20px;
+    font-family: 'Lato', sans-serif;
+}
+    
+.menu-list a:visited{
+    color: white;
+}
+
+.menu-list a:nth-child(1){
+    color: red;
+}
+
+.menu-list a li:after{
+    content: '/';
+    margin: 0 20px 0 20px;
+    color:white;
+}
+
+
+.menu-list a:hover{
+    font-weight: bold;
+}
+
+.quotes{
+    position: absolute;
+    top:30%;
+    left:20%;
+    width:30%;
+    text-align: justify;
+    
+}
+
+.quotes > h3{
+    text-align: right;
+}
+
+.filmsView{
+    width:100%;
+    height: 800px;
+    font-size: 30px;
+    margin-top:110px;
+    text-align: center;
+}
+
+.filmBox{
+    margin:150px 0 150px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: row wrap;
+}
+
+.filmBox a img{
+    padding: 10px;
+}
+
+
+.news{
+    margin:150px auto 150px;
+    text-align: center;
+    font-size:30px;
+    width:50%;
+}
+
+
+.newsBlock{
+    margin-bottom: 200px;
+    
+}
+
+.newsContainer{
+    padding:15px;
+    
+}
+
+.postDate{
+    font-size:15px;
+    
+}
+
+.content{
+    text-align: left;
+    margin-top:80px;
+    font-size: 20px;
+}
+
+.forMoreInfo{
+    padding: 12px;
+    background: red;
+    color: white;
+    font-size: 15px;
+    border: 0;
+    margin-top: 50px;
+    box-shadow: 0 0 2em lightslategrey;
+    border-radius: 5px;
+    font-family:'Lato', sans-serif;
+}
+
+
+.footer{
+    width:100%;
+    background: rgb(238, 238, 238);
+}
+
+.socialmedia
+{
+    text-align: center;
+}
+
+.socialmedia > img{
+    padding: 30px;
+}
+
+.socialmedia > h5{
+    margin: 0;
+    padding: 5px;
+}
+}
+
+
+@media only screen and (max-width:1260px) and (min-width: 768px)
+{
+
+   
+    .page{
+        width:100%;
+    }
+    .photo{
+        background-color: rgb(26,26,26);
+        height: 550px;
+        width: 100%;
+        color:white;
+        
+    
+    }
+    
+    .site-top{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;      
+    }
+    
+    .site-top > h1{
+        font-size:35px;
+        margin-left:30px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .hamburger
+    {
+    display: inline;
+    cursor: pointer;
+    margin:25px; 
+    z-index: 11;
+    }
+
+
+
+    .bar1, .bar2, .bar3
+    {
+    width: 32px;
+    height: 4px;
+    background: #fff;
+    margin: 6px 0;
+    }
+
+    .menu {
+        width:300px;
+        height: 450px;
+        float: right;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #CA3433;
+        border-bottom-left-radius: 100%;
+        display: none;
+    }
+
+
+    .menu-list {
+        font-size:20px;
+        font-family: 'Lato', sans-serif;
+        list-style-type: none;
+        float: right;
+        margin: 100px 50px 0 0;
+    }
+    
+    .menu-list a{
+        text-decoration: none;
+        padding: 5px;
+        text-align: right;
+    }
+    .menu-list a:visited{
+        color: white;
+    }
+    
+    .menu-list a:hover{
+        font-weight: bold;
+    }
+    
+    .quotes{
+        position: absolute;
+        top:20%;
+        left:10%;
+        width:50%;
+        font-size:13px;
+        text-align: justify;
+        
+    }
+    
+    .quotes > h3{
+        text-align: right;
+    }
+
+    
+.filmsView{
+    width:100%;
+    height: 100%;
+    font-size: 30px;
+    margin-top:10px;
+    text-align: center;
+}
+
+.filmsView h1{
+    font-size:50px;
+}
+
+.filmBox{
+    margin:50px 0 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.filmBox a img{
+    /*padding: 10px;*/
+}
+
+
+.news{
+    margin:150px auto 150px;
+    text-align: center;
+    font-size:30px;
+    width:80%;
+}
+.news h1{
+    font-size:50px;
+}
+
+
+.newsBlock{
+    margin-bottom: 200px;
+    
+}
+
+.newsContainer{
+    padding:15px;
+    
+}
+
+.postDate{
+    font-size:15px;
+    
+}
+
+.content{
+    text-align: left;
+    margin-top:80px;
+    font-size: 20px;
+}
+
+.forMoreInfo{
+    padding: 12px;
+    background: red;
+    color: white;
+    font-size: 15px;
+    border: 0;
+    margin-top: 50px;
+    box-shadow: 0 0 2em lightslategrey;
+    border-radius: 5px;
+    font-family:'Lato', sans-serif;
+}
+
+
+.footer{
+    width:100%;
+    background: rgb(238, 238, 238);
+}
+
+.socialmedia
+{
+    text-align: center;
+}
+
+.socialmedia > img{
+    padding: 30px;
+}
+
+.socialmedia > h5{
+    margin: 0;
+    padding: 5px;
+}
+
+}
+
+
+@media only screen and (max-width:768px)
+{
+
+   
+   
+    .page{
+        width:100%;
+        
+    }
+    .photo{
+        background-color: rgb(26,26,26);
+        height: 750px;
+        width: 100%;
+        color:white;
+
+    }
+    
+    .site-top{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;      
+    }
+    
+    .site-top > h1{
+        font-size:30px;
+        margin-left:30px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .hamburger
+    {
+    display: inline;
+    cursor: pointer;
+    margin:25px ; 
+    z-index: 11;
+    }
+
+
+
+    .bar1, .bar2, .bar3
+    {
+    width: 32px;
+    height: 4px;
+    background: #fff;
+    margin: 6px 0;
+    }
+
+    .menu {
+        width:280px;
+        height: 450px;
+        float: right;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #CA3433;
+        border-bottom-left-radius: 100%;
+        display: none;
+    }
+
+  
+
+    .menu-list {
+        font-size:20px;
+        font-family: 'Lato', sans-serif;
+        list-style-type: none;
+        float: right;
+        margin: 100px 50px 0 0;
+    }
+    
+    .menu-list a{
+        text-decoration: none;
+        margin-right: 10px;
+        text-align: right;
+    }
+    .menu-list a:visited{
+        color: white;
+    }
+    
+    .menu-list a:hover{
+        font-weight: bold;
+    }
+    
+    .quotes{
+        position: absolute;
+        top:55%;
+        left:15%;
+        width:70%;
+        font-size:13px;
+        text-align: justify;
+        
+    }
+    
+    .quotes > h3{
+        text-align: right;
+    }
+
+    
+.filmsView{
+    width:100%;
+    height: 100%;
+    font-size: 30px;
+    margin-top:10px;
+    text-align: center;
+}
+
+.filmsView h1{
+    margin-top:100px;
+    margin-bottom: 100px;
+    font-size:30px;
+}
+
+.filmBox{
+    margin:50px 0 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.filmBox img {
+    width: 300px;
+    height: 500px;
+    
+}
+
+
+.news{
+    margin:150px auto 150px;
+    text-align: center;
+    font-size:30px;
+    width:90%;
+}
+.news h1{
+    font-size:50px;
+}
+
+
+.newsBlock{
+    margin-bottom: 200px;
+    
+}
+
+.newsContainer{
+    padding:15px;
+    
+}
+
+.postDate{
+    font-size:15px;
+    
+}
+
+.content{
+    text-align: left;
+    margin-top:80px;
+    font-size: 20px;
+}
+
+.forMoreInfo{
+    padding: 12px;
+    background: red;
+    color: white;
+    font-size: 15px;
+    border: 0;
+    margin-top: 50px;
+    box-shadow: 0 0 2em lightslategrey;
+    border-radius: 5px;
+    font-family:'Lato', sans-serif;
+}
+
+
+.footer{
+    width:100%;
+    background: rgb(238, 238, 238);
+}
+
+.socialmedia
+{
+    text-align: center;
+}
+
+.socialmedia > img{
+    padding: 30px;
+}
+
+.socialmedia > h5{
+    margin: 0;
+    padding: 5px;
+}
+
+}
